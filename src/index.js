@@ -2,10 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
 
+import "./index.css";
+
 const root = ReactDOM.createRoot(document.getElementById("shader-gradient"));
 
 root.render(
   <React.StrictMode>
+    <div className="overlay"></div>
     <ShaderGradientCanvas style={{ position: "absolute" }}>
       <ShaderGradient
         control="query"
